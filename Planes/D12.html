@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	
+	<title>Planes</title>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+	
+	<style>
+
+		body{
+			height: 75px;
+			width: auto;
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+			margin-left: 0px;
+		
+			font-family: "Bebas Neue", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			background-color: #f0f0f0;
+        }
+		
+		/* Container */
+		.container {
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			height: 1000px;
+			background-color: #FFFFFF;
+		}
+		/* Navigation */
+		header {
+		
+			align-items: center;
+			width: 100%;
+			height: 5%;
+			background-color: #fffff;
+		}
+		
+		.logo{
+			
+			width: 10%;
+			float: left;
+			margin-top: 12px;
+			margin-left: 25px;
+			letter-spacing: 1px;
+			color: #FE5F7A;
+			font-size: 25px;
+			
+		}
+		.menu{
+			
+			float: right;
+			margin-top: 15px;
+			margin-right: 25px;
+			height: 25px;
+ 			width: 25px;
+ 			background-color: #FE5F7A;
+  			border-radius: 50%;
+		}
+		
+		main{
+			text-align: center;
+			height: 70%;
+			width: 100%;
+			background-color: #fffff;
+		}
+		.dice{
+			
+			margin-top: 50px;
+			 display: block;
+  			margin-left: auto;
+ 			margin-right: auto;
+			margin-bottom: 50px;
+
+		}
+		
+		button {
+			
+			font-family: "Bebas Neue", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			letter-spacing: 1px;
+            font-size: 20px;
+			padding: 10px 20px;
+           
+            cursor: pointer;
+            width: 100px;
+			border: none;
+            border-radius: 5px;
+            background-color: #FE5F7A;
+            color: white;
+        }
+        button:hover {
+            background-color: ;
+        }
+		
+		.number{
+			font-family: "Bebas Neue", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			letter-spacing: 1px;
+            font-size: 75px;
+			color: #FE5F7A;
+			margin-bottom: 35px
+			
+		}
+	
+	</style>
+	
+</head>
+	
+
+<body>
+	
+	<div class="container">
+	
+		<header>
+		
+			<a href="">
+			<h4 class="logo">Planes</h4>
+			</a>
+			
+			<a href="Menu.html">
+			<div class="menu"></div>
+			</a>
+			
+			
+			
+		
+		
+
+		</header>
+		
+		<main>
+			
+			<img src="C:\Users\Deejay Taylor\Desktop\Planes\Assets\D12.png" alt="" width="200" height="200" class="dice"/>
+			
+			
+        <div class="number" id="number">-</div>
+			
+        <button onclick="rollDice()">ROLL
+		</button>
+			
+
+    <script>
+        function rollDice() {
+            const number = Math.floor(Math.random() * 12) + 1;
+            document.getElementById('number').textContent = number;
+        }
+    </script>
+			
+			</main>
+		
+	</div>
+	
+	
+</body>
+</html>
